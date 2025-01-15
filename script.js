@@ -420,42 +420,42 @@ function eventBanners(){
 }
 eventBanners();
 
-function sponsorHead(){
-    var str = "";
-  document.querySelector(".sponsors").textContent.split("").forEach(function(dets) {
-    str += `<span>${dets}</span>`;
-  });
-  document.querySelector(".sponsors").innerHTML = str;
-  const spans = document.querySelectorAll(".sponsors span");
-  spans.forEach(function(span) {
-    span.addEventListener("mouseenter", function() {
-      gsap.to(span, {
-          y: -10, // Move the text 10px up vertically
-          scale: 1.1, // Slightly scale up the text
-          skewX: 10, // Skew the text on the X-axis (in degrees)
-          skewY: 5,  // Skew the text on the Y-axis (in degrees)
-          rotation: 10, // Rotate the text 10 degrees
-          duration: 0.5, // Duration of the animation
-          ease: "power2.out", // Smooth easing
-      });
-  });
+// function sponsorHead(){
+//     var str = "";
+//   document.querySelector(".sponsors").textContent.split("").forEach(function(dets) {
+//     str += `<span>${dets}</span>`;
+//   });
+//   document.querySelector(".sponsors").innerHTML = str;
+//   const spans = document.querySelectorAll(".sponsors span");
+//   spans.forEach(function(span) {
+//     span.addEventListener("mouseenter", function() {
+//       gsap.to(span, {
+//           y: -10, // Move the text 10px up vertically
+//           scale: 1.1, // Slightly scale up the text
+//           skewX: 10, // Skew the text on the X-axis (in degrees)
+//           skewY: 5,  // Skew the text on the Y-axis (in degrees)
+//           rotation: 10, // Rotate the text 10 degrees
+//           duration: 0.5, // Duration of the animation
+//           ease: "power2.out", // Smooth easing
+//       });
+//   });
   
-  // Animation when mouse leaves the element
-  span.addEventListener("mouseleave", function() {
-      gsap.to(span, {
-          y: 0, // Reset the vertical position to its original state
-          scale: 1, // Reset scale to normal size
-          skewX: 0, // Reset skew on the X-axis
-          skewY: 0, // Reset skew on the Y-axis
-          rotation: 0, // Reset rotation to 0 degrees
-          duration: 0.5,
-          ease: "power2.out",
-      });
-  });
+//   // Animation when mouse leaves the element
+//   span.addEventListener("mouseleave", function() {
+//       gsap.to(span, {
+//           y: 0, // Reset the vertical position to its original state
+//           scale: 1, // Reset scale to normal size
+//           skewX: 0, // Reset skew on the X-axis
+//           skewY: 0, // Reset skew on the Y-axis
+//           rotation: 0, // Reset rotation to 0 degrees
+//           duration: 0.5,
+//           ease: "power2.out",
+//       });
+//   });
   
-      });
-}
-sponsorHead();
+//       });
+// }
+// sponsorHead();
 
 function sponsorHead2(){
   var str = "";
